@@ -1,0 +1,28 @@
+{
+  "version": 8,
+  "name": "simple",
+  "sources": {
+    "compass": {
+      "type": "vector",
+      "tiles": ["https://test.gc2.io/mapcache/test/gmaps/public.skov.mvt/{z}/{x}/{y}.png"]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#f8f4f0"
+      }
+    },{
+      "interactive": true,
+      "id": "skov",
+      "type": "fill",
+      "source": "compass",
+      "source-layer": "public.skov",
+      "paint": {
+        "fill-color": "#a0c8f0"
+      }
+    }
+  ]
+}
